@@ -1,8 +1,7 @@
-# open-interpreter-sandbox
+# open-interpreter-cpu-sandbox
 This provides **open-interpreter** docker sandbox.
 
-In this sandbox, GPU is **not** available.
-
+In this sandbox, only the CPU is available. GPU is **not** available.
 ## Setup
 ### Docker build
 ```shell
