@@ -1,7 +1,8 @@
 FROM ubuntu:22.04
 
-RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y python3 python3-pip
+ENV DEBIAN_FRONTEND=noninteractive
+RUN apt update && apt upgrade -y
+RUN apt install -y build-essential cmake python3 python3-pip python-is-python3
 
-RUN pip install open-interpreter==0.1.1
-RUN CMAKE_ARGS="-DLLAMA_OPENBLAS=on" FORCE_CMAKE=1 pip install llama-cpp-python --upgrade --no-cache-dir
+RUN pip install open-interpreter==0.1.3 --no-cache-dir
+RUN pip install llama-cpp-python==0.2.1 --no-cache-dir
