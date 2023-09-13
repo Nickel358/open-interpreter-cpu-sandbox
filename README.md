@@ -15,5 +15,5 @@ docker run -it --rm open-interpreter-sandbox
 
 ### Run open-interpreter
 ```shell
-root@hostname:/# interpreter
+root@hostname:/# interpreter --local
 ```
